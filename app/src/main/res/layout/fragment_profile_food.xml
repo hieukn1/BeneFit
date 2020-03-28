@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food.Profile"
+    android:id="@+id/profileFragmentLayout" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hieu pro"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:ellipsize="marquee"
+        android:id="@+id/profile_user_name"
+        android:layout_below="@+id/profilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/profilePicture"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_email"
+        android:textSize="25dp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:id="@+id/profile_user_email"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/profile_user_name"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Daily Calorie Goal:"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:id="@+id/profile_daily_calorie_goal"
+        android:ellipsize="marquee"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/profile_user_email"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="1800 Cal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:ellipsize="marquee"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_daily_calorie_goal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/profile_seekbar_response"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="9dp"
+        android:max="4000"
+        android:theme="@style/SeekBarColor"
+        android:id="@+id/profile_calorie_chooser"
+        android:layout_below="@+id/profile_seekbar_response"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:id="@+id/saveChanges_button"
+        android:background="@drawable/black_border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:background="@drawable/black_border"
+        android:id="@+id/deleteAccountButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

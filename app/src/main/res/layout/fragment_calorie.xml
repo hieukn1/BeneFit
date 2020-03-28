@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+tools:context=".food.CalorieFragment">
+
+<!-- TODO: Update blank fragment layout -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="28dp"
+    android:textColor="@color/colorAccent"
+    android:text="1800" android:id="@+id/caloriesRemaining"
+    android:layout_marginTop="19dp"
+    android:layout_marginEnd="10dp" android:layout_alignParentTop="true"
+    android:layout_toStartOf="@+id/textView4"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10dp"
+    android:text="Calories Remaining" android:id="@+id/textView2"
+    android:layout_marginStart="27dp"
+    android:layout_below="@+id/caloriesRemaining" android:layout_alignParentStart="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:textColor="@color/colorPrimary"
+    android:text="          "
+    android:layout_marginStart="54dp" android:id="@+id/textView4"
+    android:layout_alignTop="@+id/caloriesRemaining" android:layout_toEndOf="@+id/textView2"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="28dp"
+    android:textColor="@color/colorAccent"
+    android:text="1800" android:id="@+id/foodAmount"
+    android:layout_alignTop="@+id/textView4" android:layout_centerHorizontal="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10dp"
+    android:text="Calories From Food" android:id="@+id/textView3"
+    android:layout_below="@+id/foodAmount" android:layout_centerHorizontal="true"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="28dp"
+    android:textColor="@color/colorAccent"
+    android:text="1800" android:id="@+id/goalAmount"
+    android:layout_above="@+id/textView3" android:layout_toEndOf="@+id/textView3"
+    android:layout_marginStart="33dp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="10dp"
+    android:text="Calorie Goal" android:id="@+id/textView5"
+    android:layout_below="@+id/goalAmount" android:layout_alignStart="@+id/goalAmount"/>
+
+</RelativeLayout>
+
